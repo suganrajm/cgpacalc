@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="SUGANRAJ" content="CGPA calculator for three semesters">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CGPA Calculator</h1>
+        <h2 class="psnacet">PSNACET</h2>
+        <h3 class="psnacet">2022-2026 Batch</h3>
+        
+
+        <!-- Semester 1 -->
+        <div class="semester">
+            <h2>Semester 1</h2>
+            <form id="semester1Form">
+                <div class="subject">
+                    <label for="subject1">English (4 Credits):</label>
+                    <select id="subject1" data-credit="4">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject2">Maths (4 Credits):</label>
+                    <select id="subject2" data-credit="4">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject3">Physics (3 Credits):</label>
+                    <select id="subject3" data-credit="3">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject4">Chemistry (3 Credits):</label>
+                    <select id="subject4" data-credit="3">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject5">Python (3 Credits):</label>
+                    <select id="subject5" data-credit="3">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject6">Python Lab (2 Credits):</label>
+                    <select id="subject6" data-credit="2">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject7">Physics/Chemistry Lab (2 Credits):</label>
+                    <select id="subject7" data-credit="2">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <button type="button" id="calculate1">Calculate Semester 1 GPA</button>
+                <div class="result-box" id="result1"></div>
+            </form>
+        </div>
+
+        <!-- Semester 2 -->
+        <div class="semester">
+            <h2>Semester 2</h2>
+            <form id="semester2Form">
+                <div class="subject">
+                    <label for="subject8">English II (2 Credits):</label>
+                    <select id="subject8" data-credit="2">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject9">Maths II (4 Credits):</label>
+                    <select id="subject9" data-credit="4">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject10">Physics II (3 Credits):</label>
+                    <select id="subject10" data-credit="3">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject11">Engineering Graphics (EG) (4 Credits):</label>
+                    <select id="subject11" data-credit="4">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject12">Fundamentals of Electrical Engineering (FEE) (3 Credits):</label>
+                    <select id="subject12" data-credit="3">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject13">Circuit Analysis (4 Credits):</label>
+                    <select id="subject13" data-credit="4">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject14">Electrical and Power Lab (EPL) (2 Credits):</label>
+                    <select id="subject14" data-credit="2">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject15">Circuit Analysis Lab (1 Credit):</label>
+                    <select id="subject15" data-credit="1">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject16">English Lab (1.5 Credits):</label>
+                    <select id="subject16" data-credit="1.5">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <button type="button" id="calculate2">Calculate Semester 2 GPA</button>
+                <div class="result-box" id="result2"></div>
+            </form>
+        </div>
+
+        <!-- Semester 3 -->
+        <div class="semester">
+            <h2>Semester 3</h2>
+            <form id="semester3Form">
+                <div class="subject">
+                    <label for="subject17">Maths III (4 Credits):</label>
+                    <select id="subject17" data-credit="4">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject18">C Programming (3 Credits):</label>
+                    <select id="subject18" data-credit="3">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject19">Signals and Systems (SS) (3 Credits):</label>
+                    <select id="subject19" data-credit="3">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject20">Electronic Devices and Circuits (EDC) (3 Credits):</label>
+                    <select id="subject20" data-credit="3">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject21">Control and Automation (C&A) (3 Credits):</label>
+                    <select id="subject21" data-credit="3">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject22">Digital System Design (DSD) (4 Credits):</label>
+                    <select id="subject22" data-credit="4">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject23">EDC Lab (1.5 Credits):</label>
+                    <select id="subject23" data-credit="1.5">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject24">C Programming Lab (1.5 Credits):</label>
+                    <select id="subject24" data-credit="1.5">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="subject25">Professional Development (PD) Lab (1 Credit):</label>
+                    <select id="subject25" data-credit="1">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                    </select>
+                </div>
+                <button type="button" id="calculate3">Calculate Semester 3 GPA</button>
+                <div class="result-box" id="result3"></div>
+            </form>
+        </div>
+
+        <div class="final-result">
+            <h2>Final CGPA</h2>
+            <div id="finalCGPA"></div><br>
+            <h4 class="sugan">Designed by SUGAN RAJ</h4>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
